@@ -123,3 +123,5 @@ select  * from student where marks between 85 and 100;
 select  * from student where  city in ("mumbai","delhi");
 
 select  * from student where city not in ("mumbai");
+
+select  * from student where marks>80 limit 2;
