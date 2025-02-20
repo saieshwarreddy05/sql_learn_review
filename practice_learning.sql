@@ -80,10 +80,37 @@ values
 select * from emp;
 
 ##########
-
+ 
 
 #PQ-2
 
+ create database college;
+ use college;
+ 
+ create table student (
+	rollno int primary key,
+    name varchar(50),
+    marks int not null,
+    grade varchar(1),
+    city varchar(20)
+ );
+ 
+ drop table student;
+ 
+ insert into student
+ (rollno,name,marks,grade,city)
+ values
+ (1,"sai",78,"c","pune"),
+ (2,"indra",93,"a","mumbai"),
+ (3,"pavan",85,"b","mumbai"),
+ (4,"vijay",96,"a","delhi"),
+ (5,"kolli",12,"f","delhi"),
+ (6,"chaithu",82,"b","delhi");
+ select * from student;
+ 
+ select distinct city from student;
+ 
+ 
  
 
 
@@ -92,8 +119,3 @@ select * from emp;
 
 
 
-
-
-
- 
- 
