@@ -82,7 +82,6 @@ select * from emp;
 ##########
  
 
-#PQ-2
 
  create database college;
  use college;
@@ -110,13 +109,17 @@ select * from student;
  
 select distinct city from student;
  
- 
 select  * from student where marks>80;
 select * from student where city="mumbai";
 
 select * from student where marks>80 and city="mumbai";
 
+select * from student where marks>80 or city="mumbai";
 
+select  * from student where marks+10>80;
 
+select  * from student where marks between 85 and 100;
 
+select  * from student where  city in ("mumbai","delhi");
 
+select  * from student where city not in ("mumbai");
