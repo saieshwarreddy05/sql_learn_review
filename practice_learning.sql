@@ -69,6 +69,19 @@ insert into temp1 values(2);
 select * from temp1;
 
 
+create table emp(id int,salary int default 15000);
+insert into emp
+(id,salary)
+values
+(1,20000),
+(2,salary),
+(3,25000);
+
+select * from emp;
+
+##########
+
+
 #PQ-2
 
  
