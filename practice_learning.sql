@@ -61,7 +61,17 @@ select * from employee;
 
 #####################################
 
+create table temp1(id int unique);
+insert into temp1 values(1);
+insert into temp1 values(0);
+insert into temp1 values(2);
+
+select * from temp1;
+
+
 #PQ-2
+
+ 
 
 
 
