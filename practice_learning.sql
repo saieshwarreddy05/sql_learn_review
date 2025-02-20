@@ -106,14 +106,15 @@ select * from emp;
  (4,"vijay",96,"a","delhi"),
  (5,"kolli",12,"f","delhi"),
  (6,"chaithu",82,"b","delhi");
- select * from student;
+select * from student;
  
- select distinct city from student;
+select distinct city from student;
  
  
- 
+select  * from student where marks>80;
+select * from student where city="mumbai";
 
-
+select * from student where marks>80 and city="mumbai";
 
 
 
