@@ -129,7 +129,4 @@ select  * from student where marks>80 limit 2;
 select * from student order by marks asc;
 
  select * from student order by marks Desc limit 3;
-
-
-
-
+ 
