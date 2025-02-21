@@ -128,5 +128,16 @@ select  * from student where marks>80 limit 2;
 
 select * from student order by marks asc;
 
- select * from student order by marks Desc limit 3;
+select * from student order by marks Desc limit 3;
  
+select max(marks) from student;
+
+select avg(marks) from student;
+ 
+ select city ,max(marks) from student group by city;
+ 
+ #PQS
+ 
+ select city,avg(marks) from student group by city order by avg(marks);
+
+
