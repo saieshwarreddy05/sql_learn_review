@@ -136,7 +136,7 @@ select avg(marks) from student;
  
  select city ,max(marks) from student group by city;
  
- #PQS
+ #PQS2
  
  select city,avg(marks) from student group by city order by avg(marks);
 
