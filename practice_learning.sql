@@ -184,7 +184,27 @@ create table dept (
 
 drop table teacher ;
 
+insert into dept 
+(id,name) 
+values
+(101,"telugu"),
+(102,"hindi"),
+(103,"english"),
+(104,"maths");
 
+select * from dept;
+
+
+insert into teacher 
+(id,name,dept_id)
+values
+(1,"pandu",102),
+(2,"shiva",103),
+(3,"Nani",104),
+(4,"perugu",101),
+(5,"ram",102);
+
+select * from teacher;
 
 
 
