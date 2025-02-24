@@ -209,5 +209,27 @@ select * from teacher;
 update dept set id=106 where id =102;
 update dept set id=102 where id =106;
 
+#Alter
+
+alter table student
+add column age int ;
+
+select * from student; 
+
+alter table student 
+drop column age;
+
+alter table student change rollno rollnumber int ;
+alter table student change rollnumber rollno  int ;
+
+#modify for change in type and constrain
+#renmae for change ot table name 
+
+alter table student
+add column age int not null default 18;
+
+
+alter table student 
+modify column age varchar(3);
 
 
