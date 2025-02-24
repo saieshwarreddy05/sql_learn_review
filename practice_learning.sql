@@ -165,3 +165,23 @@ update student set marks =12 where rollno =3;
 delete from student where marks <33;
 
 select * from student;
+
+#just wanna visulize how the EER diagrams works in reverse engineering which is in database 
+
+create table dept (
+	id int primary key,
+    name varchar(50)
+ );
+ 
+ create table teacher (
+	id int primary key,
+    name varchar(50),
+    dept_id int,
+    foreign key (dept_id) references dept(id)
+ );
+
+
+
+
+
+
