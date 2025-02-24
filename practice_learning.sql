@@ -136,8 +136,10 @@ select avg(marks) from student;
  
  select city ,max(marks) from student group by city;
  
- #PQS2
+ 
  
  select city,avg(marks) from student group by city order by avg(marks);
 
+
+select city ,count(rollno) from student group by city having max(marks)>90;
 
