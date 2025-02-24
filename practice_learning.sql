@@ -178,8 +178,11 @@ create table dept (
     name varchar(50),
     dept_id int,
     foreign key (dept_id) references dept(id)
+    on update cascade
+    on delete cascade
  );
 
+drop table teacher ;
 
 
 
