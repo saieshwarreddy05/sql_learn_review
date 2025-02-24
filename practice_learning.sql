@@ -148,11 +148,16 @@ select city from student where grade ="A" group by city having max(marks)>=93 or
 
 #turning off safe update
 
-set sql_safe_updates=0;
+set sql_safe_updates=0; #1 for on
 
 update student set grade="O" where grade ="A";
 
-
 select * from student;
+
+update student set marks =82 where rollno =2;
+
+update student set grade ="b" where marks between 80 and 90;
+
+
 
 
