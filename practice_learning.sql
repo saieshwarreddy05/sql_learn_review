@@ -206,5 +206,8 @@ values
 
 select * from teacher;
 
+update dept set id=106 where id =102;
+update dept set id=102 where id =106;
+
 
 
