@@ -136,10 +136,8 @@ select avg(marks) from student;
  
  select city ,max(marks) from student group by city;
  
- 
- 
  select city,avg(marks) from student group by city order by avg(marks);
-
 
 select city ,count(rollno) from student group by city having max(marks)>90;
 
+select city from student where grade ="A" group by city having max(marks)>=93 order by city asc;
