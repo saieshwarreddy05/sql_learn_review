@@ -141,3 +141,18 @@ select avg(marks) from student;
 select city ,count(rollno) from student group by city having max(marks)>90;
 
 select city from student where grade ="A" group by city having max(marks)>=93 order by city asc;
+
+
+
+#table realted queries
+
+#turning off safe update
+
+set sql_safe_updates=0;
+
+update student set grade="O" where grade ="A";
+
+
+select * from student;
+
+
