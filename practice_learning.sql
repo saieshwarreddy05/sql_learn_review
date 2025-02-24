@@ -158,6 +158,10 @@ update student set marks =82 where rollno =2;
 
 update student set grade ="b" where marks between 80 and 90;
 
+update student set marks =marks+1;
 
+update student set marks =12 where rollno =3;
 
+delete from student where marks <33;
 
+select * from student;
