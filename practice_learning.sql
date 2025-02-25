@@ -316,8 +316,16 @@ select name,marks from student
 where marks > (select avg(marks) from student);
 
 
+# even number finder
 
+#manually
+select rollno from student where rollno % 2=0;#2,4,6
 
+select name from student where rollno in (2,4,6);
 
+#with sub query (dynamically )
+
+select name from student 
+where rollno in (select rollno from student where rollno % 2=0);
 
 
