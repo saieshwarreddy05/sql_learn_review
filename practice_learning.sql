@@ -301,3 +301,23 @@ on student.id=course.id
 where student.id is null;
 
 
+#sub query
+use college;
+select * from student;
+
+select avg(marks) from student; #85.5
+
+select name,marks from student
+where marks > 85.5;  #manually 
+
+#but by using sub query we can do dynamically
+
+select name,marks from student
+where marks > (select avg(marks) from student);
+
+
+
+
+
+
+
