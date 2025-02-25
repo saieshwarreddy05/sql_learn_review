@@ -329,3 +329,22 @@ select name from student
 where rollno in (select rollno from student where rollno % 2=0);
 
 
+#max marks within delhi
+
+#normally we can find delhi student and then find max of it 
+#but we gonnna do with sub query
+
+select max(marks)
+from (select * from student where city ="delhi") as temp;
+
+
+# VIEWS
+#virtual table (can hide sensitive information if we wanna give permision to it)
+
+create view view1 as 
+select rollno,name,marks,grade from student ;
+
+select * from view1;
+
+drop view view1;
+
