@@ -233,3 +233,54 @@ alter table student
 modify column age varchar(3);
 
 
+#JOINS
+
+ create database joinscollege;
+ use joinscollege;
+
+create table student (id int primary key,name varchar(20));
+
+insert into student(id,name) values
+(101,"adam"),
+(102,"bob"),
+(103,"casey");
+
+select * from student;
+
+create table course(id int primary key, course varchar(20));
+
+insert into course(id,course) values
+(102,"english"),
+(105,"maths"),
+(103,"science"),
+(107,"CSE");
+
+select * from course;
+
+select *
+from student as s
+inner join course as c
+on s.id=c.id;
+
+select *
+from student 
+left join course
+on student.id=course.id;
+
+select *
+from student 
+right join course
+on student.id=course.id;
+
+# full join
+
+select *
+from student 
+left join course
+on student.id=course.id
+union
+select *
+from student 
+right join course
+on student.id=course.id;
+
