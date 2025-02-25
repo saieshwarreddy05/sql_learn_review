@@ -284,3 +284,20 @@ from student
 right join course
 on student.id=course.id;
 
+#left exclusive join
+
+select *
+from student 
+left join course
+on student.id=course.id
+where course.id is null;
+
+#right exclusive join
+
+select *
+from student 
+right join course
+on student.id=course.id
+where student.id is null;
+
+
